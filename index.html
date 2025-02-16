@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chordguitar</title>
+    <title>ChordGuitar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('artbg.png') no-repeat center center/cover;
+            text-align: center;
+            flex-direction: column;
+        }
+        .section-1 {
+            width: 80%;
+            max-width: 450px;
+            background: rgba(211, 239, 252, 0.856);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 5vw;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-container {
+            margin-top: 10px;
+        }
+        .btn-container button {
+            margin: 3px;
+            background: #007BFF;
+            color: white;
+        }
+        .btn-container button:hover {
+            background: #0056b3;
+        }
+        .section-2 {
+            width: 80%;
+            max-width: 500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            background: rgba(211, 239, 252, 0.856);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .box {
+            height: 50px;
+            background: #accdff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            gap: 10px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .box img {
+            width: 30px;
+            height: 30px;
+        }
+        .box:hover {
+            background: #176cec;
+        }
+    </style>
 </head>
 <body>
-    <h1>helloworld</h1>
+    <div class="section-1">
+        <h1>ChordGuitar</h1>
+        <input type="text" placeholder="ค้นหาที่นี่...">
+        <div class="btn-container">
+            <button onclick="location.href='page1.html'">ไปหน้าที่ 1</button>
+            <button onclick="location.href='page2.html'">ไปหน้าที่ 2</button>
+            <button onclick="location.href='page3.html'">ไปหน้าที่ 3</button>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="box" onclick="location.href='page1.html'"><img src="icon1.png" alt="icon"> ช่อง 1</div>
+        <div class="box" onclick="location.href='page2.html'"><img src="icon2.png" alt="icon"> ช่อง 2</div>
+        <div class="box" onclick="location.href='page3.html'"><img src="icon3.png" alt="icon"> ช่อง 3</div>
+        <div class="box" onclick="location.href='page4.html'"><img src="icon4.png" alt="icon"> ช่อง 4</div>
+        <div class="box" onclick="location.href='page5.html'"><img src="icon5.png" alt="icon"> ช่อง 5</div>
+        <div class="box" onclick="location.href='page6.html'"><img src="icon6.png" alt="icon"> ช่อง 6</div>
+        <div class="box" onclick="location.href='page7.html'"><img src="icon7.png" alt="icon"> ช่อง 7</div>
+        <div class="box" onclick="location.href='page8.html'"><img src="icon8.png" alt="icon"> ช่อง 8</div>
+        <div class="box" onclick="location.href='page9.html'"><img src="icon9.png" alt="icon"> ช่อง 9</div>
+        <div class="box" onclick="location.href='page10.html'"><img src="icon10.png" alt="icon"> ช่อง 10</div>
+    </div>
 </body>
 </html>
